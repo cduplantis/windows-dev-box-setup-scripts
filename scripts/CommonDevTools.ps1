@@ -4,6 +4,7 @@ choco install -y microsoft-windows-terminal
 Update-SessionEnvironment
 choco install -y git --package-parameters="'/GitAndUnixToolsOnPath /WindowsTerminal'"
 Update-SessionEnvironment
+choco install -y poshgit
 choco install -y git-fork
 choco install -y vscode
 choco install -y winmerge
