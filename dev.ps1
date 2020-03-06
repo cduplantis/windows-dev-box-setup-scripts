@@ -21,6 +21,9 @@ function executeScript {
 	iex ((new-object net.webclient).DownloadString("$helperUri/$script"))
 }
 
+# Set Chocolatey Tools Location
+if (-not (Test-Path env:ChocolateyToolsLocation)) { $env:ChocolateyToolsLocation = "$env:ProgramData\chocolatey-tools" }
+
 #--- Setting up Windows ---
 executeScript "RemoveDefaultApps.ps1";
 executeScript "FileExplorerSettings.ps1";
