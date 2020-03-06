@@ -43,6 +43,8 @@ $applicationList = @(
 	"Microsoft.NetworkSpeedTest"
 	"Microsoft.FreshPaint"
 	"Microsoft.Print3D"
+	"Microsoft.SkypeApp"
+	"Microsoft.Microsoft3DViewer"
 	"*Autodesk*"
 	"*BubbleWitch*"
     "king.com*"
