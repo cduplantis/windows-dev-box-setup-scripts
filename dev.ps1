@@ -34,6 +34,13 @@ executeScript "WSL.ps1";
 executeScript "Browsers.ps1";
 executeScript "CommonTools.ps1";
 
+#--- Tools ---
+code --install-extension msjsdiag.debugger-for-chrome
+code --install-extension msjsdiag.debugger-for-edge
+
+#--- Microsoft WebDriver ---
+choco install -y microsoftwebdriver
+
 Enable-UAC
 Enable-MicrosoftUpdate
 Install-WindowsUpdate -acceptEula
